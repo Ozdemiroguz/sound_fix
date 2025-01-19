@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundFix - Audio Maintenance Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+
+        header .feedback-link {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            background: white;
+            color: #0078d7;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        header .feedback-link:hover {
+            background: #f0f0f0;
+        }
+
+        .logo {
+            display: block;
+            margin: 1rem auto 0;
+            max-width: 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            padding: 1.5rem;
+            flex: 1 1 calc(33% - 2rem);
+            text-align: center;
+        }
+
+        .feature img {
+            max-width: 100px;
+            margin-bottom: 1rem;
+            border: 4px solid #0078d7;
+            /* Kalın border */
+            border-radius: 12px;
+            /* Yuvarlatılmış köşeler */
+            transition: transform 0.3s ease;
+            /* Hover animasyonu için */
+        }
+
+        .feature img:hover {
+            transform: scale(1.1);
+            /* Hover'da büyütme efekti */
+        }
+
+        .feature h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .cta button {
+            background: #0078d7;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background: #005fa3;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .feature {
+                flex: 1 1 calc(100% - 2rem);
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.png" alt="SoundFix Logo" class="logo">
+        <h1>SoundFix</h1>
+        <p>Your Ultimate Audio Maintenance Tool</p>
+        <!-- Feedback Link -->
+        <a href="feedback.html" class="feedback-link">Feedback</a>
+    </header>
+
+    <div class="container">
+        <section class="features">
+            <div class="feature">
+                <img src="assets/cleaning.png" alt="Cleaning Icon">
+                <h3>Advanced Cleaning</h3>
+                <p>Remove dust, water, and debris with specialized sound frequencies.</p>
+            </div>
+
+            <div class="feature">
+                <img src="assets/performance.png" alt="Optimization Icon">
+                <h3>Performance Optimization</h3>
+                <p>Boost sound quality with calibration tools for balanced audio.</p>
+            </div>
+
+            <div class="feature">
+                <img src="assets/periodic.png" alt="Maintenance Icon">
+                <h3>Periodic Maintenance</h3>
+                <p>Keep your devices in peak condition with scheduled care modes.</p>
+            </div>
+        </section>
+
+        <div class="cta">
+            <button onclick="downloadApp()">Download Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SoundFix. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function downloadApp() {
+            alert('Download functionality coming soon!');
+        }
+    </script>
+</body>
+
+</html>
